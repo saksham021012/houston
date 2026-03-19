@@ -47,6 +47,7 @@ To run this locally:
 3. Create a `.env.local` file at the root of the project and add your Groq API key:
    ```env
    GROQ_API_KEY=your_groq_api_key_here
+   NEXT_PUBLIC_APP_URL=http://localhost:3000
    ```
 4. Start the server:
    ```bash
