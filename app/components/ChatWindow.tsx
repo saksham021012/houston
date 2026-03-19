@@ -33,18 +33,22 @@ export default function ChatWindow({ messages, isStreaming }: ChatWindowProps) {
       style={{ scrollBehavior: "smooth" }}
     >
       <div className="mx-auto max-w-3xl">
-        {messages.map((msg) => (
-          <MessageBubble
-            key={msg.id}
-            message={msg}
-            isStreaming={
-              isStreaming &&
-              msg.id === lastMessage?.id &&
-              msg.role === "assistant" &&
-              msg.content !== ""
-            }
-          />
-        ))}
+        {messages.map((msg) => {
+          if (msg.role === "assistant" && msg.content === "") return null;
+          
+          return (
+            <MessageBubble
+              key={msg.id}
+              message={msg}
+              isStreaming={
+                isStreaming &&
+                msg.id === lastMessage?.id &&
+                msg.role === "assistant" &&
+                msg.content !== ""
+              }
+            />
+          );
+        })}
         {showTypingIndicator && <TypingIndicator />}
       </div>
     </div>
