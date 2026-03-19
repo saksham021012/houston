@@ -1,10 +1,11 @@
 # Houston: Mission Control Terminal
 
-![Houston Terminal Preview](./public/preview.png)
+<img width="1919" height="870" alt="image" src="https://github.com/user-attachments/assets/1ef24c71-f0b0-4708-a0cc-143dd29a1362" />
+
 
 I built Houston for an assignment that asked us to create a purpose-built chatbot, rather than just another generic AI wrapper. 
 
-Most AI apps today look exactly the same—a clean white screen with a chat box at the bottom. I decided to go in the exact opposite direction. I chose **Space Exploration** as my topic because it perfectly fits an old-school, retro-terminal aesthetic. 
+Most AI apps today look exactly the same, a clean white screen with a chat box at the bottom. I decided to go in the exact opposite direction. I chose **Space Exploration** as my topic because it perfectly fits an old-school, retro-terminal aesthetic. 
 
 The goal was to make the user feel like they are sitting at a 1970s NASA mission control desk, talking to a strict communications AI (CAPCOM).
 
